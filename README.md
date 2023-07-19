@@ -9,3 +9,4 @@
 
 ### 2. C - Functions, Nested Loops
 
+### 3. C - Debugging
