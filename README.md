@@ -12,3 +12,5 @@
 ### 3. C - Debugging
 
 ### 4. C - More Functions, More Nested Loops
+
+### 5. C - Pointers, Arrays And Strings
