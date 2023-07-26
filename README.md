@@ -14,3 +14,5 @@
 ### 4. C - More Functions, More Nested Loops
 
 ### 5. C - Pointers, Arrays And Strings
+
+### 6. C - More Pointers, Arrays And Strings
