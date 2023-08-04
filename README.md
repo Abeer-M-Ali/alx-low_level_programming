@@ -19,4 +19,6 @@
 
 ### 7. C - Even More Pointers, Arrays And Strings
 
-### 7. C - Recursion
+### 8. C - Recursion
+
+### 9. C - Static Libraries
