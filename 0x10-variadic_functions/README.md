@@ -17,6 +17,10 @@
     - If `n == 0`, return `0`
     - use the `0-main.c`
 
+	```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-sum_them_all.c -o a	
+    ```
+
 
 ### To be is to be the value of a variable
 
@@ -28,6 +32,10 @@
     - If `separator` is `NULL`, don’t print it
     - Print a new line at the end of your function
     - use the `1-main.c`
+
+	```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-print_numbers.c -o b	
+    ```
 
 
 ### One woman's constant is another woman's variable
@@ -41,6 +49,11 @@
     - If one of the string is NULL, print `(nil)` instead
     - Print a new line at the end of your function
     - use the `2-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_strings.c -o c    
+    ```
+
 
 
 ### To be is a to be the value of a variable
@@ -62,3 +75,7 @@
     - You are allowed to use `printf`
     - Print a new line at the end of your function
     - use the `3-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-print_all.c -o d    
+    ```
