@@ -40,6 +40,7 @@ typedef struct list_s
     - If `str` is `NULL`, print `[0] (nil)`
     - You are allowed to use `printf`
     - use the `0-main.c`
+      
 	```{bash}
 	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a
 	```
@@ -50,6 +51,7 @@ typedef struct list_s
 1. Write a function that returns the number of elements in a linked list_t list.
     - Prototype: `size_t list_len(const list_t *h);`
     - use the `1-main.c`
+      
 	```{bash}
 	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b
 	```
@@ -63,6 +65,7 @@ typedef struct list_s
     - `str` needs to be duplicated
     - You are allowed to use strdup
     - use the `2-main.c`
+      
 	```{bash}
 	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 0-print_list.c -o c
 	```
@@ -76,6 +79,7 @@ typedef struct list_s
     - `str` needs to be duplicated
     - You are allowed to use `strdup`
     - use the `3-main.c`
+      
 	```{bash}
 	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_node_end.c 0-print_list.c -o d
 	```
@@ -84,6 +88,7 @@ typedef struct list_s
 4. Write a function that frees a list_t list.
     - Prototype: `void free_list(list_t *head);`
     - use the `4-main.c`
+      
 	```{bash}
 	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e
 	```
@@ -101,6 +106,7 @@ typedef struct list_s
 5. Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
     - You are allowed to use the `printf` function
     - use the `100-main.c`
+      
 	```{bash}
 	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first
 	```
@@ -113,6 +119,7 @@ typedef struct list_s
     - You are only allowed to use the `printf` function
     - You are not allowed to use interrupts
     - Your program will be compiled using `nasm` and `gcc`:
+      
 	```{bash}
 	$ nasm -f elf64 101-hello_holberton.asm && gcc -no-pie -std=gnu89 101-hello_holberton.o -o hello
 	```
