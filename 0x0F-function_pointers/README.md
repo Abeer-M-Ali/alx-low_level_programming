@@ -16,6 +16,10 @@
     - Prototype: `void print_name(char *name, void (*f)(char *));`
     - use the `0-main.c`
 
+	```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_name.c -o a	
+    ```
+
 
 ### If you spend too much time thinking about a thing, you'll never get it done
 
@@ -24,6 +28,10 @@
     - where `size` is the size of the array
     - and `action` is a pointer to the function you need to use
     - use the `1-main.c`
+
+	```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-array_iterator.c -o b	
+    ```
 
 
 ### To hell with circumstances; I create opportunities
@@ -36,6 +44,10 @@
     - If no element matches, return `-1`
     - If size <= `0`, return `-1`
     - use the `2-main.c`
+
+	```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-int_index.c -o c	
+    ```
 
 
 ### A goal is not always meant to be reached, it often serves simply as something to aim at
@@ -97,6 +109,10 @@
 
     - use the `3-calc.h` `3-op_functions.c` `3-get_op_func.c` `3-main.c` 
 
+	```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc	
+    ```
+
 
 
 
@@ -127,3 +143,7 @@
 * Note 0: `je` is equivalent to `jz`
 
 * Note 1: depending on how you write your `main` function, and on which machine you compile your program, the opcodes (and by extension the assembly code) might be different than the above example
+
+    ```{bash}
+    gcc -std=gnu89 100-main_opcodes.c -o main	
+    ```
