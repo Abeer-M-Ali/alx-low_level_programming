@@ -10,6 +10,27 @@
 
 
 
+## Please use this data structure for this project:
+
+```{bash}
+
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+
+```
+
 ### Print list
 
 0. Write a function that prints all the elements of a `list_t` list.
@@ -19,49 +40,79 @@
     - If `str` is `NULL`, print `[0] (nil)`
     - You are allowed to use `printf`
     - use the `0-main.c`
+	```{bash}
+	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a
+	```
 
 
-### To be is to be the value of a variable
+### List length
 
-1. Write a function that prints numbers, followed by a new line.
-    - Prototype: `void print_numbers(const char *separator, const unsigned int n, ...);`
-    - where `separator` is the string to be printed between numbers
-    - and `n` is the number of integers passed to the function
-    - You are allowed to use `printf`
-    - If `separator` is `NULL`, don’t print it
-    - Print a new line at the end of your function
+1. Write a function that returns the number of elements in a linked list_t list.
+    - Prototype: `size_t list_len(const list_t *h);`
     - use the `1-main.c`
+	```{bash}
+	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b
+	```
 
 
-### One woman's constant is another woman's variable
+### Add node
 
-2. Write a function that prints strings, followed by a new line.
-    - Prototype: `void print_strings(const char *separator, const unsigned int n, ...);`
-    - where `separator` is the string to be printed between the strings
-    - and `n` is the number of strings passed to the function
-    - You are allowed to use `printf`
-    - If separator is NULL, don’t print it
-    - If one of the string is NULL, print `(nil)` instead
-    - Print a new line at the end of your function
+2. Write a function that adds a new node at the beginning of a `list_t` list.
+    - Prototype: `list_t *add_node(list_t **head, const char *str);`
+    - Return: the address of the new element, or `NULL` if it failed
+    - `str` needs to be duplicated
+    - You are allowed to use strdup
     - use the `2-main.c`
+	```{bash}
+	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 0-print_list.c -o c
+	```
 
 
-### To be is a to be the value of a variable
+### Add node at the end
 
-3. Write a function that prints anything.
-    - Prototype: `void print_all(const char * const format, ...);`
-    - where `format` is a list of types of arguments passed to the function
-        * `c`: `char`
-        * `i`: `integer`
-        * `f`: `float`
-        * `s`: `char *` (if the string is NULL, print `(nil)` instead
-        * any other char should be ignored
-        * see example
-    - You are not allowed to use `for`, `goto`, ternary operator, `else`, `do ... while`
-    - You can use a maximum of
-        * 2 `while` loops
-        * 2 `if`
-    - You can declare a maximum of `9` variables
-    - You are allowed to use `printf`
-    - Print a new line at the end of your function
+3. Write a function that adds a new node at the end of a `list_t` list.
+    - Prototype: `list_t *add_node_end(list_t **head, const char *str);`
+    -Return: the address of the new element, or `NULL` if it failed
+    - `str` needs to be duplicated
+    - You are allowed to use `strdup`
     - use the `3-main.c`
+	```{bash}
+	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_node_end.c 0-print_list.c -o d
+	```
+### Free list
+
+4. Write a function that frees a list_t list.
+    - Prototype: `void free_list(list_t *head);`
+    - use the `4-main.c`
+	```{bash}
+	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e
+	```
+
+
+
+## Advanced
+
+
+
+
+
+### The Hare and the Tortoise
+
+5. Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
+    - You are allowed to use the `printf` function
+    - use the `100-main.c`
+	```{bash}
+	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first
+	```
+
+
+
+###  Real programmers can write assembly code in any language
+
+6. Write a 64-bit program in assembly that prints `Hello, Holberton`, followed by a new line.
+    - You are only allowed to use the `printf` function
+    - You are not allowed to use interrupts
+    - Your program will be compiled using `nasm` and `gcc`:
+	```{bash}
+	$ nasm -f elf64 101-hello_holberton.asm && gcc -no-pie -std=gnu89 101-hello_holberton.o -o hello
+	```
