@@ -1,1 +1,67 @@
-Singly linked lists
+# C - Singly Linked Lists Tasks :
+
+ 
+ 
+ 
+
+## Mandatory
+
+
+
+
+
+### Print list
+
+0. Write a function that prints all the elements of a `list_t` list.
+    - Prototype: `size_t print_list(const list_t *h);`
+    - Return: the number of nodes
+    - Format: see example
+    - If `str` is `NULL`, print `[0] (nil)`
+    - You are allowed to use `printf`
+    - use the `0-main.c`
+
+
+### To be is to be the value of a variable
+
+1. Write a function that prints numbers, followed by a new line.
+    - Prototype: `void print_numbers(const char *separator, const unsigned int n, ...);`
+    - where `separator` is the string to be printed between numbers
+    - and `n` is the number of integers passed to the function
+    - You are allowed to use `printf`
+    - If `separator` is `NULL`, don’t print it
+    - Print a new line at the end of your function
+    - use the `1-main.c`
+
+
+### One woman's constant is another woman's variable
+
+2. Write a function that prints strings, followed by a new line.
+    - Prototype: `void print_strings(const char *separator, const unsigned int n, ...);`
+    - where `separator` is the string to be printed between the strings
+    - and `n` is the number of strings passed to the function
+    - You are allowed to use `printf`
+    - If separator is NULL, don’t print it
+    - If one of the string is NULL, print `(nil)` instead
+    - Print a new line at the end of your function
+    - use the `2-main.c`
+
+
+### To be is a to be the value of a variable
+
+3. Write a function that prints anything.
+    - Prototype: `void print_all(const char * const format, ...);`
+    - where `format` is a list of types of arguments passed to the function
+        * `c`: `char`
+        * `i`: `integer`
+        * `f`: `float`
+        * `s`: `char *` (if the string is NULL, print `(nil)` instead
+        * any other char should be ignored
+        * see example
+    - You are not allowed to use `for`, `goto`, ternary operator, `else`, `do ... while`
+    - You can use a maximum of
+        * 2 `while` loops
+        * 2 `if`
+    - You can declare a maximum of `9` variables
+    - You are allowed to use `printf`
+    - Print a new line at the end of your function
+    - use the `3-main.c`
