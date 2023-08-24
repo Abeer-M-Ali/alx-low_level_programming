@@ -14,11 +14,19 @@
 
 * FYI: The standard library provides a similar function: `puts`. Run `man puts` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion	
+    ```
+
 ### Why is it so important to dream? Because, in my dreams we are together
 
 1. Write a function that prints a string in reverse.
     - Prototype: `void _print_rev_recursion(char *s);`
     - use the `1-main.c `
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-print_rev_recursion.c -o 1-print_rev_recursion	
+    ```
 
 ### Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
 
@@ -28,6 +36,10 @@
 
 * FYI: The standard library provides a similar function: `strlen`. Run `man strlen` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89  2-main.c 2-strlen_recursion.c -o 2-strlen_recursion	
+    ```
+
 ### You mustn't be afraid to dream a little bigger, darling
 
 3. Write a function that returns the factorial of a given number.
@@ -35,6 +47,10 @@
     - If `n` is lower than `0`, the function should return `-1` to indicate an error
     - Factorial of `0` is `1`
     - use the `3-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-factorial.c -o 3-factorial	
+    ```
 
 ### Once an idea has taken hold of the brain it's almost impossible to eradicate
 
@@ -45,6 +61,10 @@
 
 * FYI: The standard library provides a different function: `pow`. Run `man pow` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-pow_recursion.c -o 4-pow	
+    ```
+
 ### Your subconscious is looking for the dreamer
 
 5. Write a function that returns the natural square root of a number.
@@ -54,11 +74,19 @@
 
 * FYI: The standard library provides a different function: `sqrt`. Run `man sqrt` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-sqrt_recursion.c -o 5-sqrt	
+    ```
+
 ### Inception. Is it possible?
 
 6. Write a function that returns `1` if the input integer is a prime number, otherwise return `0`.
     - Prototype: `int is_prime_number(int n);`
     - use the `6-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-is_prime_number.c -o 6-prime	
+    ```
 
 
 
@@ -76,6 +104,10 @@
     - An empty string is a palindrome
     - use the `100-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-is_palindrome.c -o 100-palindrome	
+    ```
+
 ### Inception. Now, before you bother telling me it's impossible...
 
 8. Write a function that compares two strings and returns `1` if the strings can be considered identical, otherwise return `0`.
@@ -83,3 +115,7 @@
     - `s2` can contain the special character `*`.
     - The special char `*` can replace any string (including an empty string)
     - use the `101-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-wildcmp.c -o 101-wildcmp	
+    ```
