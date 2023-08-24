@@ -16,6 +16,10 @@
     - Returns a pointer to the array, or `NULL` if it fails
     - use the `0-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-create_array.c -o a	
+    ```
+
 
 ### The woman who has no imagination has no wings
 
@@ -28,6 +32,9 @@
 
 * FYI: The standard library provides a similar function: `strdup`. Run `man strdup` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-strdup.c -o s	
+    ```
 
 ### He who is not courageous enough to take risks will accomplish nothing in life
 
@@ -37,6 +44,10 @@
     - if `NULL` is passed, treat it as an empty string
     - The function should return `NULL` on failure
     - use the `2-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-str_concat.c -o c	
+    ```
 
 
 ### If you even dream of beating me you'd better wake up and apologize
@@ -48,6 +59,10 @@
     - If `width` or `height` is `0` or negative, return `NULL`
     - use the `3-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-alloc_grid.c -o g	
+    ```
+
 
 ### It's not bragging if you can back it up
 
@@ -55,6 +70,10 @@
     - Prototype: `void free_grid(int **grid, int height);`
     - Note that we will compile with your `alloc_grid.c` file. Make sure it compiles.
     - use the `4-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-alloc_grid.c 4-free_grid.c -o f	
+    ```
 
 
 
@@ -73,6 +92,10 @@
     - Each argument should be followed by a `\n` in the new string
     - use the `100-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-argstostr.c -o args	
+    ```
+
 
 ### I will show you how great I am
 
@@ -85,3 +108,7 @@
     - Returns `NULL` if `str == NULL` or `str == ""`
     - If your function fails, it should return `NULL`
     - use the `101-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-strtow.c -o strtow	
+    ```
