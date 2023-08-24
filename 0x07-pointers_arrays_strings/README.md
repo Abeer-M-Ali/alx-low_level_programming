@@ -16,6 +16,10 @@
 
 * FYI: The standard library provides a similar function: `memset`. Run `man memset` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-memset.c -o 0-memset	
+    ```
+
 ### memcpy
 
 1. Write a function that copies memory area.
@@ -26,6 +30,10 @@
 
 * FYI: The standard library provides a similar function: `memcpy`. Run `man memcpyt` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-memcpy.c -o 1-memcpy	
+    ```
+
 ### strchr
 
 2. Write a function that locates a character in a string.
@@ -35,6 +43,10 @@
 
 * FYI: The standard library provides a similar function: `strchr`. Run `man strchr` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strchr.c -o 2-strchr	
+    ```
+
 ### strspn
 
 3. Write a function that gets the length of a prefix substring.
@@ -43,6 +55,10 @@
     - use the `3-main.c`
 
 * FYI: The standard library provides a similar function: `strspn`. Run `man strspn` to learn more.
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strspn.c -o 3-strspn	
+    ```
 
 ### strpbrk
 
@@ -54,6 +70,10 @@
 
 * FYI: The standard library provides a similar function: `strpbrk`. Run `man strpbrk` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-strpbrk.c -o 4-strpbrk	
+    ```
+
 ### strstr
 
 5. Write a function that locates a substring.
@@ -63,11 +83,19 @@
 
 * FYI: The standard library provides a similar function: `strstr`. Run `man strstr` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-strstr.c -o 5-strstr	
+    ```
+
 ### Chess is mental torture
 
 6. Write a function that prints the chessboard.
     - Prototype: `void print_chessboard(char (*a)[8]);`
     - use the `7-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_chessboard.c -o 7-print_chessboard	
+    ```
 
 ### The line of life is a ragged diagonal between duty and desire
 
@@ -79,6 +107,10 @@
 
 * Note that in the following example we are casting an `int[][]` into an `int*`. This is not something you should do. The goal here is to make sure you understand how an array of array is stored in memory.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 8-print_diagsums.c -o 8-print_diagsums	
+    ```
+
 
 ## Advanced
 
@@ -89,6 +121,10 @@
 8. Write a function that sets the value of a pointer to a char.
     - Prototype: `void set_string(char **s, char *to);`
     - use the `100-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-set_string.c -o 100-set_string	
+    ```
 
 ### My primary goal of hacking was the intellectual curiosity, the seduction of adventure
 
