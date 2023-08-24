@@ -18,6 +18,11 @@
     - if `malloc` fails, the `malloc_checked` function should cause normal process termination with a status value of `98`
     - use the `0-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-malloc_checked.c -o a	
+    ```
+
+
 
 ### string_nconcat
 
@@ -29,6 +34,10 @@
     - if `NULL` is passed, treat it as an empty string
     - use the `1-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-string_nconcat.c -o 1-string_nconcat	
+    ```
+
 
 ### _calloc
 
@@ -39,6 +48,11 @@
     - If `nmemb` or `size` is `0`, then `_calloc` returns `NULL`
     - If `malloc` fails, then `_calloc` returns `NULL`
     - use the `2-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-calloc.c -o 2-calloc	
+    ```
+
 
 * FYI: The standard library provides a different function: `calloc`. Run `man calloc` to learn more.
 
@@ -53,6 +67,9 @@
     - If `malloc` fails, return `NULL`
     - use the `3-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-array_range.c -o 3-array_range	
+    ```
 
 
 
@@ -78,6 +95,10 @@
     - Don’t forget to free `ptr` when it makes sense
     - use the `100-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-realloc.c -o 100-realloc	
+    ```
+
 * FYI: The standard library provides a different function: `realloc`. Run `man realloc` to learn more.
 
 
@@ -93,3 +114,8 @@
     - use the `100-main.c`
 
 * You can use `bc` (`man bc`) to check your results.
+
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-mul.c _putchar.c -o 101-mul	
+    ```
