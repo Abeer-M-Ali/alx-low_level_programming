@@ -16,6 +16,10 @@
 
 * FYI: The standard library provides a similar function: `strcat`. Run `man strcat` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-strcat.c -o 0-strcat	
+    ```
+
 ### strncat
 
 1. Write a function that concatenates two strings.
@@ -28,6 +32,10 @@
 
 * FYI: The standard library provides a similar function: `strncat`. Run `man strncat` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-strncat.c -o 1-strncat	
+    ```
+
 ### strncpy
 
 2. Write a function that copies a string.
@@ -36,6 +44,10 @@
    - use the `2-main.c`
 
 * FYI: The standard library provides a similar function: `strncpy`. Run `man strncpy` to learn more.
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strncpy.c -o 2-strncpy	
+    ```
 
 ### strcmp
 
@@ -46,6 +58,10 @@
 
 * FYI: The standard library provides a similar function: `strcmp`. Run `man strcmp` to learn more.
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strcmp.c -o 3-strcmp	
+    ```
+
 ### I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
 
 4. Write a function that reverses the content of an array of integers.
@@ -53,11 +69,19 @@
    - Where `n` is the number of elements of the array
    - use the `4-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-rev_array.c -o 4-rev_array	
+    ```
+
 ### Always look up
 
 5. Write a function that changes all lowercase letters of a string to uppercase.
    - Prototype: `char *string_toupper(char *);`
    - use the `5-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-string_toupper.c -o 5-string_toupper	
+    ```
 
 ### Expect the best. Prepare for the worst. Capitalize on what comes
 
@@ -65,6 +89,10 @@
    - Prototype: `char *cap_string(char *);`
    - Separators of words: space, tabulation, new line, `,`, `;`, `.`, `!`, `?`, `"`, `(`, `)`, `{`, and `}`
    - use the `6-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-cap_string.c -o 6-cap	
+    ```
 
 ### Mozart composed his music not for the elite, but for everybody
 
@@ -80,6 +108,10 @@
    - You are not allowed to use `switch`
    - You are not allowed to use any ternary operation
    - use the `7-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 7-leet.c -o 7-1337	
+    ```
 
 
 
@@ -97,6 +129,10 @@
    - You are not allowed to use any ternary operation
    - use the `100-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-rot13.c -o 100-rot13	
+    ```
+
 ### Numbers have life; they're not just symbols on paper
 
 9. Write a function that prints an integer.
@@ -106,6 +142,10 @@
    - You are not allowed to use arrays or pointers
    - You are not allowed to hard-code special values
    - use the `101-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 101-main.c 101-print_number.c -o 101-print_numbers	
+    ```
 
 ### A dream doesn't become reality through magic; it takes sweat, determination and hard work
 
@@ -135,6 +175,10 @@
    - If the result can not be stored in `r` the function must return `0`
    - use the `103-main.c`
 
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-main.c 103-infinite_add.c -o 103-add	
+    ```
+
 ###  Noise is a buffer, more effective than cubicles or booth walls
 
 12. Write a function that prints a buffer.
@@ -149,3 +193,7 @@
    - You are allowed to use the standard library
    - The output should look like the following example, and formatted exactly the same way:
    - use the `104-main.c`
+
+    ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 104-main.c 104-print_buffer.c -o 104-buffer	
+    ```
