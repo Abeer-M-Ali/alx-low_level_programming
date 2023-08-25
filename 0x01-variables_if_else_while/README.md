@@ -17,6 +17,10 @@
 		- if the number is less than 0: `is negative`
 	* followed by a new line
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative	
+   ```
+
 ### The last digit
 
 1. This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
@@ -32,6 +36,10 @@
 		- if the last digit of `n` is less than 6 and not 0: `the string and is less than 6 and not 0`
 	* followed by a new line
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o 1-last_digit
+   ```
+
 ### I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 
 2. Write a program that prints the alphabet in lowercase, followed by a new line.
@@ -39,12 +47,20 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet
+   ```
+
 ### alphABET
 
 3. Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
    - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
+
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o 3-print_alphabets
+   ```
 
 ### When I was having that alphabet soup, I never thought that it would pay off
 
@@ -54,10 +70,18 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt
+   ```
+
 ### Numbers
 
 5. Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
    - All your code should be in the `main` function
+
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-print_numbers.c -o 5-print_numbers
+   ```
 
 ### Numberz
 
@@ -67,6 +91,10 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-print_numberz.c -o 6-print_numberz
+   ```
+
 ### Smile in the mirror
 
 7. Write a program that prints the lowercase alphabet in reverse, followed by a new line.
@@ -74,12 +102,20 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o 7-print_tebahpla
+   ```
+
 ### Hexadecimal
 
 8. Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
    - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
+
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-print_base16.c -o 8-print_base16
+   ```
 
 ### Patience, persistence and perspiration make an unbeatable combination for success
 
@@ -90,6 +126,10 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
    - You are not allowed to use any variable of type `char`
+
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-print_comb
+   ```
 
 
 
@@ -110,6 +150,10 @@
    - You can only use `putchar` twice in your code
    - You are not allowed to use any variable of type `char`
 
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-print_comb3.c -o 100-print_comb3
+   ```
+
 ### The success combination in business is: Do what you do better... and: do more of what you do...
 
 11. Write a program that prints all possible different combinations of three digits.
@@ -122,6 +166,10 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
    - You are not allowed to use any variable of type `char`
+
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-print_comb4.c -o 101-print_comb4
+   ```
 
 ### Software is eating the World
 
@@ -136,3 +184,7 @@
    - All your code should be in the `main` function
    - You can only use `putchar` twice in your code
    - You are not allowed to use any variable of type `char`
+
+   ```{bash}
+    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-print_comb5.c -o 102-print_comb5
+   ```
