@@ -41,3 +41,5 @@
 ### 18. C - Singly Linked Lists
 
 ### 19. C - More Singly Linked Lists
+
+### 20. C - Bit manipulation
