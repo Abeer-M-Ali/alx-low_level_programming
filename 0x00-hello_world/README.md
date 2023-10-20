@@ -49,6 +49,6 @@ points using `main`, and text-printing functions in C.
   without using any functions listed in the NAME sesction of the man(3) `printf` or man(3)
   `puts`.
 
-## Authors :black_nib:
+## Author :black_nib:
 
 - [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
