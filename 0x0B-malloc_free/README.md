@@ -1,114 +1,82 @@
-# C - Malloc, Free Tasks :
+# C - malloc, free
 
- 
- 
+In this project, I learned about the difference between automatic
+and dynamic location as well as how to use `malloc`, `free`, and `valgrind` in C.
 
-## Mandatory
+## Tests :heavy_check_mark:
 
+* [tests](./tests): Folder of test files. Provided by Holberton School.
 
+## Header File :file_folder:
 
+* [main.h](./main.h): Header file containing prototypes for all functions written
+in the project.
 
-### Float like a butterfly, sting like a bee
+| File               | Protoype                                         |
+| ------------------ | ------------------------------------------------ |
+| `0-create_array.c` | `char *create_array(unsigned int size, char c);` |
+| `1-strdup.c`       | `char *_strdup(char *str);`                      |
+| `2-str_concat.c`   | `char *str_concat(char *s1, char *s2);`          |
+| `3-alloc_grid.c`   | `int **alloc_grid(int width, int height);`       |
+| `4-free_grid.c`    | `void free_grid(int **grid, int height);`        |
+| `5-argstostr.c`    | `char *argstostr(int ac, char **av);`            |
+| `100-strtow.c`     | `char **strtow(char *str);`                      |
 
-0. Write a function that creates an array of chars, and initializes it with a specific char.
-    - Prototype: `char *create_array(unsigned int size, char c);`
-    - Returns `NULL` if size = `0`
-    - Returns a pointer to the array, or `NULL` if it fails
-    - use the `0-main.c`
+## Tasks :page_with_curl:
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-create_array.c -o a	
-    ```
+## 0. Float like a butterfly, sting like a bee
+  * [0-create_array.c](./0-create_array.c): C function that returns a pointer to a
+  newly-allocated space in memory containing an array of characters.
+    * The array of characters is initialized to the parameter `c`.
+    * If the function fails or receives `size` equal to `0` - returns `NULL`.
 
+## 1. The woman who has no imagination has no wings
+  * [1-strdup.c](./1-strdup.c): C function that returns a pointer to a newly-allocated space
+  in memory containing a copy of the string passed as parameter.
+    * Returns a pointer to a new string which is a duplicate of the string `str`.
+    * Memory for the new string is obtained with `malloc` and can be freed with `free`.
+    * If `str` is `NULL` or insufficient memory was available - returns `NULL`.
 
-### The woman who has no imagination has no wings
+## 2. He who is not courageous enough to take risks will accomplish nothing in life
+  * [2-str_concat.c](./2-str_concat.c): C function that returns a pointer to a
+  newly-allocated space in memory containing the concatenation of two strings passed as
+  parameters.
+    * The returned pointer contains the contents of `s1` followed by `s2` and is
+    null-terminated.
+    * The function treats `NULL` as an empty string.
+    * If the function fails - returns `NULL`.
 
-1. Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
-    - Prototype: `char *_strdup(char *str);`
-    - The `_strdup()` function returns a pointer to a new string which is a duplicate of the string `str`. Memory for the new string is obtained with `malloc`, and can be freed with `free`.
-    - Returns `NULL`v if str = NULL
-    - On success, the `_strdup()` function returns a pointer to the duplicated string. It returns `NULL` if insufficient memory was available
-    - use the `1-main.c`
+## 3. If you even dream of beating me you'd better wake up and apologize**
+  * [3-alloc_grid.c](./3-alloc_grid.c): C function that returns a
+  pointer to a newly-allocated space in memory containing a two-dimensional array of integers.
+    * Each element of the two-dimensional array is initialized to `0`.
+    * If the function fails or either of `width` or `height` is
+    `0` or negative - returns `NULL`.
 
-* FYI: The standard library provides a similar function: `strdup`. Run `man strdup` to learn more.
+## 4. It's not bragging if you can back it up
+  * [4-free_grid.c](./4-free_grid.c): C function that frees a two-dimensional array previsouly
+  created by the `alloc_grid` function defined in `3-alloc_grid.c`.
+    * The program does not crash upon receiving invalid two-dimensional arrays.
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-strdup.c -o s	
-    ```
+## 5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe
+  * [100-argstostr.c](./100-argstostr.c): C function that returns a pointer to a
+  newly-allocated space in memory containing the concatenation of all the arguments of the
+  program.
+    * Each argument is followed by a `\n` in the new string.
+    * If `ac == 0`, `av == NULL`, or the function fails - returns `NULL`.
 
-### He who is not courageous enough to take risks will accomplish nothing in life
-
-2. Write a function that concatenates two strings.
-    - Prototype: `char *str_concat(char *s1, char *s2);`
-    - The returned pointer should point to a newly allocated space in memory which contains the contents of `s1`, followed by the contents of `s2`, and null terminated
-    - if `NULL` is passed, treat it as an empty string
-    - The function should return `NULL` on failure
-    - use the `2-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-str_concat.c -o c	
-    ```
-
-
-### If you even dream of beating me you'd better wake up and apologize
-
-3. Write a function that returns a pointer to a 2 dimensional array of integers.
-    - Prototype: `int **alloc_grid(int width, int height);`
-    - ReEach element of the grid should be initialized to `0`
-    - The function should return `NULL` on failure
-    - If `width` or `height` is `0` or negative, return `NULL`
-    - use the `3-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-alloc_grid.c -o g	
-    ```
-
-
-### It's not bragging if you can back it up
-
-4. Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
-    - Prototype: `void free_grid(int **grid, int height);`
-    - Note that we will compile with your `alloc_grid.c` file. Make sure it compiles.
-    - use the `4-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-alloc_grid.c 4-free_grid.c -o f	
-    ```
-
+## 6. I will show you how great I am
+  * [101-strtow.c](./101-strtow.c): C function that splits a string into words.
+    * Returns a pointer to a newly-allocated space in memory containing
+    an array of strings (words).
+    * Each element of the array of strings contains a single word, null-terminated.
+    * The last element of the returned array is `NULL`.
+    * Words are separated by spaces.
+    * If `str == NULL`, `str == ""`, or the function fails - returns `NULL`.
 
 
+## Author :black_nib:
 
-## Advanced
-
-
-
-
-### It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe
-
-5. Write a function that concatenates all the arguments of your program.
-    - Prototype: `char *argstostr(int ac, char **av);`
-    - Returns `NULL` if `ac == 0` or `av == NULL`
-    - Returns a pointer to a new string, or `NULL` if it fails
-    - Each argument should be followed by a `\n` in the new string
-    - use the `100-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-argstostr.c -o args	
-    ```
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
 
 
-### I will show you how great I am
-
-6. Write a function that splits a string into words.
-    - Prototype: `char **strtow(char *str);`
-    - The function returns a pointer to an array of strings (words)
-    - Each element of this array should contain a single word, null-terminated
-    - The last element of the returned array should be `NULL`
-    - Words are separated by spaces
-    - Returns `NULL` if `str == NULL` or `str == ""`
-    - If your function fails, it should return `NULL`
-    - use the `101-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-strtow.c -o strtow	
-    ```
