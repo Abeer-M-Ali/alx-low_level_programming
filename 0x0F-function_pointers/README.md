@@ -1,149 +1,84 @@
-# C - Function Pointers Tasks :
+# C - Function pointers
 
- 
- 
- 
+In this project, I learned about function pointers in C - what they hold,
+where they point in virtual memory, and how to use them.
 
-## Mandatory
+## Tests :heavy_check_mark:
 
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
+## Header Files :file_folder:
 
+* [function_pointers.h](./function_pointers.h): Header file containing prototypes
+for all functions written for programs 0-2 of the project.
 
+| File                 | Prototype                                                            |
+| -------------------- | -------------------------------------------------------------------- |
+| `0-print_name.c`     | `void print_name(char *name, void (*f)(char *));`                    |
+| `1-array_iterator.c` | `void array_iterator(int *array, size_t size, void (*action)(int));` |
+| `2-int_index.c`      | `int int_index(int *array, int size, int (*cmp)(int));`              |
 
-### What's my name
+* [3-calc.h](./3-calc.h): Header file containing definitions and prototypes for all
+types and function written for the program [3-main.c](./3-main.c).
 
-0. Write a function that prints a name.
-    - Prototype: `void print_name(char *name, void (*f)(char *));`
-    - use the `0-main.c`
+| Type/File          | Definition/Prototypes                                        |
+| ------------------ | ------------------------------------------------------------ |
+| `struct op`        | <ul><li>`char *op`</li><li>`int (*f)(int a, int b)`</li><ul> |
+| `typedef op_t`     | `struct op`                                                  |
+| `3-op_functions.c` | <ul><li>`int op_add(int a, int b);`</li><li>`int op_sub(int a, int b);`</li><li>`int op_mul(int a, int b);`</li><li>`int op_div(int a, int b);`</li><li>`int op_mod(int a, int b);`</li></ul>                                            |
+| `3-get_op_func.c`  | `int (*get_op_func(char *s))(int, int);`                     |
 
-	```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_name.c -o a	
-    ```
+## Tasks :page_with_curl:
 
+## 0. What's my name
+  * [0-print_name.c](./0-print_name.c): C function that prints a name.
 
-### If you spend too much time thinking about a thing, you'll never get it done
+## 1. If you spend too much time thinking about a thing, you'll never get it done
+  * [1-array_iterator.c](./1-array_iterator.c): C function that executes a function given
+  as a parameter on each element of an array.
 
-1. Write a function that executes a function given as a parameter on each element of an array.
-    - Prototype: `void array_iterator(int *array, size_t size, void (*action)(int));`
-    - where `size` is the size of the array
-    - and `action` is a pointer to the function you need to use
-    - use the `1-main.c`
+## 2. To hell with circumstances; I create opportunities
+  * [2-int_index.c](./2-int_index.c): C function that searches for an integer.
+    * Returns the index of the first element for which the `cmp` function does not return `0`.
+    * If no element is matched or `size` <= 0, the function returns `-1`.
 
-	```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-array_iterator.c -o b	
-    ```
+## 3. A goal is not always meant to be reached, it often serves simply as something to aim at
+  * [3-op_functions.c](./3-op_functions.c): File containing the following five functions:
+    * `op_add`: Returns the sum of `a` and `b`.
+    * `op_sub`: Returns the difference of `a` and `b`.
+    * `op_mul`: Returns the product of `a` and `b`.
+    * `op_div`: Returns the division of `a` by `b`.
+    * `op_mod`: Returns the remainder of the division of `a` by `b`.
 
+  * [3-get_op_func.c](./3-get_op_func.c): C function that selects the correct function
+  from `3-op_functions.c` to perform the operation asked by the user.
+    * If the operator argument `s` does not match any of the five expected operators
+    (`+`, `-`, `*`, `/`, `%`), the function returns `NULL`.
 
-### To hell with circumstances; I create opportunities
+  * [3-main.c](./3-main.c): C program that performs simple mathematical operations.
+    * Prints the result of the operation, followed by a new line.
+    * Usage `./a.out num1 operator num2`
+    * The program assumes `num1` and `num2` are integers that can be converted from string
+    input to `int` using `atoi`.
+    * The program assumes that the result of all operations can be stored in an `int`.
+    * `operator` is one of either `+` (addition), `-` (subtraction), `*`
+    (multiplication), `/` (division), or `%` (modulo).
+    * If the number of arguments is incorrect, the program prints `Error` followed by a new
+    line and exits with a status value of `98`.
+    * If the `operator` is none of the above, the program prints `Error` followed by
+    a new line and exits with a status value of `99`.
+    * If the user tries to divide (`/` or `%`) by `0`, the program prints
+    `Error` followed by a new line and exits with a status value of `100`.
 
-2. Write a function that searches for an integer.
-    - Prototype: `int int_index(int *array, int size, int (*cmp)(int));`
-    - where `size` is the number of elements in the array `array`
-    - `cmp` is a pointer to the function to be used to compare values
-    - int_index returns the index of the first element for which the `cmp` function does not return `0`
-    - If no element matches, return `-1`
-    - If size <= `0`, return `-1`
-    - use the `2-main.c`
+## 4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
+  * [100-main_opcodes.c](./100-main_opcodes.c): C program that prints the opcodes of its
+  own main function, followed by a new line.
+    * Usage: `./main number_of_bytes`
+    * Opcodes are printed two-decimal long in hexadecimal, lowercase.
+    * If the number of arguments is incorrect, the program prints `Error`
+    followed by a new line and exits with a status value of `2`.
 
-	```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-int_index.c -o c	
-    ```
+## Author :black_nib:
 
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
 
-### A goal is not always meant to be reached, it often serves simply as something to aim at
-
-3. Write a program that performs simple operations.
-    - You are allowed to use the standard library
-    - Usage: `calc num1 operator num2`
-    - You can assume `num1` and `num2` are integers, so use the `atoi` function to convert them from the string input to `int`
-    - `operator` is one of the following:
-        * `+:` addition
-        * `-:` subtraction
-        * `*:` multiplication
-        * `/:` division
-        * `%:` modulo
-    - The program prints the result of the operation, followed by a new line
-    - You can assume that the result of all operations can be stored in an `int`
-    - if the number of arguments is wrong, print `Error`, followed by a new line, and exit with the status `98`
-    - f the `operator` is none of the above, print `Error`, followed by a new line, and exit with the status `99`
-    - if the user tries to divide (`/` or `%`) by `0`, print `Error`, followed by a new line, and exit with the status `100`
-    
-* This task requires that you create four different files.
-    
-    ## 3-calc.h
-
-    - This file should contain all the function prototypes and data structures used by the program.
-
-    ## 3-op_functions.c
-
-    - This file should contain the 5 following functions (not more):
-        * `op_add`: returns the sum of `a` and `b`. Prototype: `int op_add(int a, int b);`
-        * `op_sub`: returns the difference of `a` and `b`. Prototype: `int op_sub(int a, int b);`
-        * `op_mul:` returns the product of `a` and `b`. Prototype: `int op_mul(int a, int b);`
-        * `op_div`: returns the result of the division of `a` by `b`. Prototype: `int op_div(int a, int b);`
-        * `op_mod`: returns the remainder of the division of `a` by `b`. Prototype: `int op_mod(int a, int b);`
-             
-    ## 3-get_op_func.c
-
-    - This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
-        * Prototype: `int (*get_op_func(char *s))(int, int);`
-        * where `s` is the operator passed as argument to the program
-        * This function returns a pointer to the function that corresponds to the operator given as a parameter. Example: `get_op_func("+")` should return a pointer to the function `op_add`
-        * You are not allowed to use `switch` statements
-        * You are not allowed to use `for` or `do ... while` loops
-        * You are not allowed to use `goto`
-        * You are not allowed to use `else`
-        * You are not allowed to use more than one `if` statement in your code
-        * You are not allowed to use more than one `while` loop in your code
-        * If `s` does not match any of the 5 expected operators (`+`, `-`, `*`, `/`, `%`), return `NULL`
-        * You are only allowed to declare these two variables in this function:
-   
-    ## 3-main.c
-
-    - This file should contain your main function only.
-        * You are not allowed to code any other function than `main` in this file
-        * You are not allowed to directly call `op_add`, `op_sub`, `op_mul`, `op_div` or `op_mod` from the `main` function
-        * You have to use `atoi` to convert arguments to `int`
-        * You are not allowed to use any kind of loop
-        * You are allowed to use a maximum of 3 `if` statements
-
-    - use the `3-calc.h` `3-op_functions.c` `3-get_op_func.c` `3-main.c` 
-
-	```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc	
-    ```
-
-
-
-
-
-## Advanced
-
-
-
-
-
-### Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
-
-4. Write a program that prints the `opcodes` of its own main function.
-    - Usage: `./main number_of_bytes`
-    - Output format:
-        * the opcodes should be printed in hexadecimal, lowercase
-        * each opcode is two char long
-        * isting ends with a new line
-        * see example
-    - You are allowed to use `printf` and `atoi`
-    - You have to use `atoi` to convert the argument to an `int`
-    - If the number of argument is not the correct one, print `Error`, followed by a new line, and exit with the status `1`
-    - If the number of bytes is negative, print `Error`, followed by a new line, and exit with the status `2`
-    - You do not have to compile with any flags
-
-* Note: if you want to translate your opcodes to assembly instructions, you can use, for instance `udcli`.
-
-* Note 0: `je` is equivalent to `jz`
-
-* Note 1: depending on how you write your `main` function, and on which machine you compile your program, the opcodes (and by extension the assembly code) might be different than the above example
-
-    ```{bash}
-    gcc -std=gnu89 100-main_opcodes.c -o main	
-    ```
