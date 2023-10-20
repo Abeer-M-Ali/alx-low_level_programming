@@ -53,7 +53,7 @@ engineering program that prepares students for careers in the tech industry
 using project-based peer learning. For more information, visit
 [this link](https://www.alxafrica.com/).
 
-## Authors :black_nib:
+## Author :black_nib:
 
 - [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
 
