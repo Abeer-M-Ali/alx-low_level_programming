@@ -1,77 +1,54 @@
-# C - Hello, World Tasks :
+  # C - Hello, World
 
+In this project, I learned about compilation using `gcc`, entry
+points using `main`, and text-printing functions in C.
 
-## Mandatory
+## Tasks :page_with_curl:
 
+## 0. Preprocessor
+  * [0-preprocessor](./0-preprocessor): Bash script that runs a C file saved in the
+  variable `$CFILE` through the preprocessor and saves the result in the file `c`.
 
-### Preprocessor
+## 1. Compiler
+  * [1-compiler](./1-compiler): Bash script that compiles a C file saved in the
+  variable `$CFILE` that does not link; saves the result in an output file of the
+  same name but with a `.o` extension.
+    * Example: If the C file is `main.c`, the output is `main.o`.
 
-0. Write a script that runs a C file through the preprocessor and save the result into another file.
-   - The C file name will be saved in the variable `$CFILE`
-   - The output should be saved in the file `c`
-   - You can find the source code in `main.c `
+* **2. Assembler**
+  * [2-assembler](./2-assembler): Bash script that generates the assembly code of a
+  C code saved in the variable `$CFILE`; saves the result in an output file of the
+  same name but with a `.s` extension.
+    * Example: If the C file is `main.c`, the result is `main.s`.
 
-### Compiler
+## 3. Name
+  * [3-name](./3-name): Bash Script that compiles a C file saved in the variable
+  `$CFILE` and creates an executable `cisfun`.
 
-1. Write a script that compiles a C file but does not link.
-   - The C file name will be saved in the variable `$CFILE`
-   - The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.
-	* Example: if the C file is `main.c`, the output file should be `main.o`
-   - You can find the source code in `main.c `
+## 4. Hello, puts
+  * [4-puts.c](./4-puts.c): C program that prints exactly `"Programming is like building
+  a multilingual puzzle`, followed by a new line, using the function `puts`.
 
-### Assembler
+## 5. Hello, printf
+  * [5-printf.c](./5-printf.c): C program that prints exactly `with proper grammer, but
+  the outcome is a piece of art,`, followed by a new line, using the function `printf`.
 
-2. Write a script that generates the assembly code of a C code and save it in an output file.
-   - The C file name will be saved in the variable `$CFILE`
-   - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
-	* Example: if the C file is `main.c`, the output file should be `main.s`
-   - You can find the source code in `main.c `
+## 6. Size is not grandeur, and territory does not make a nation
+  * [6-size.c](./6-size.c): C program that prints the size of various types on the computer
+  it is compiled and run on.
 
-### Name
+## 7. Intel
+  * [100-intel](./100-intel): Script that generates the assembly code in Intel syntax of a
+  C file saved in the variable $CFILE; saves the result in an output file of the same name
+  but with a `.s` extension.
+    * Example: If the C file is `main.c`, the output is `main.s`.
 
-3. Write a script that compiles a C file and creates an executable named `cisfun`.
-   - The C file name will be saved in the variable `$CFILE`
-   - You can find the source code in `main.c `
+## 8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
+  * [101-quote.c](./101-quote.c): C program that prints exactly `and that piece of art is
+  useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error,
+  without using any functions listed in the NAME sesction of the man(3) `printf` or man(3)
+  `puts`.
 
-### Hello, puts
+## Authors :black_nib:
 
-4. Write a C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
-   - Use the function `puts`
-   - You are not allowed to use `printf`
-   - Your program should end with the value `0`
-
-### Hello, printf
-
-5. Write a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
-   - Use the function `printf`
-   - You are not allowed to use the function `puts`
-   - Your program should return `0`
-   - Your program should compile without warning when using the `-Wall gcc` option
-
-### Size is not grandeur, and territory does not make a nation
-
-6. Write a C program that prints the size of various types on the computer it is compiled and run on.
-   - You should produce the exact same output as in the example
-   - Warnings are allowed
-   - Your program should return `0`
-   - You might have to install the package `libc6-dev-i386` on your Linux to test the `-m32 gcc` option
-
-
-
-## Advanced
-
-
-
-### Intel
-
-7. Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
-   - The C file name will be saved in the variable `$CFILE`.
-   - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
-	* Example: if the C file is `main.c`, the output file should be `main.s`
-
-### UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
-
-8. Write a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
-   - You are not allowed to use any functions listed in the NAME section of the man (3) `printf` or man (3) `puts`
-   - Your program should return `1`
-   - Your program should compile without any warnings when using the `-Wall gcc` option
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
