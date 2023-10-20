@@ -4,7 +4,7 @@ In this project, I learned about using `exit`, `calloc`, and `realloc` in C.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
 ## Header File :file_folder:
 
