@@ -15,7 +15,7 @@ points using `main`, and text-printing functions in C.
   same name but with a `.o` extension.
     * Example: If the C file is `main.c`, the output is `main.o`.
 
-* **2. Assembler**
+## 2. Assembler
   * [2-assembler](./2-assembler): Bash script that generates the assembly code of a
   C code saved in the variable `$CFILE`; saves the result in an output file of the
   same name but with a `.s` extension.
