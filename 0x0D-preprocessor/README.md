@@ -1,57 +1,34 @@
-# C - Preprocessor Tasks :
+# C - Preprocessor
 
- 
- 
+In this project, I learned about common predefined macros in C while
+practicing implementing my own and include-guarding header files.
 
+## Tests :heavy_check_mark:
 
-## Mandatory
+* [tests](./tests): Folder of test files. Provided by Holberton School.
 
+## Tasks :page_with_curl:
 
+## 0. Object-like Macro
+  * [0-object_like_macro.h](./0-object_like_macro.h): Header file that defines a
+  macro named `SIZE` as an abbreviation for the token `1024`.
 
+## 1. Pi
+  * [1-pi.h](./1-pi.h): Header file that defines a macro named `PI` as an abbreviation
+  for the token `3.14159265359`.
 
+## 2. File name
+  * [2-main.c](./2-main.c): C program that prints the name of the file it was
+  compiled from followed by a new line.
 
-### Object-like Macro
+## 3. Function-like macro
+  * [3-function_like_macro.h](./3-function_like_macro.h): Header file that defines a
+  function-like macro `ABS(x)` that computes the absolute value of a number `x`.
 
-0. Create a header file that defines a macro named `SIZE` as an abbreviation for the token `1024`.
-    - use the `0-main.c`
+## 4. SUM
+  * [4-sum.h](./4-sum.h): Header file that defines a function-like macro `SUM(x, y)`
+  that computes the sum of the numbers `x` and `y`.
+  
+  ## Author :black_nib:
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a	
-    ```
-
-### Pi
-
-1. Create a header file that defines a macro named `PI` as an abbreviation for the token `3.14159265359`.
-    - use the `1-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c -o b	
-    ```
-
-
-### File name
-
-2. Write a program that prints the name of the file it was compiled from, followed by a new line.
-    - You are allowed to use the standard library
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 02-main.c -o cc	
-    ```
-
-
-### Function-like macro
-
-3. Write a function-like macro `ABS(x)` that computes the absolute value of a number `x`.
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d	
-    ```
-
-
-### SUM
-
-4. Write a function-like macro `SUM(x, y)` that computes the sum of the numbers `x` and `y`.
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c -o e	
-    ```
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
