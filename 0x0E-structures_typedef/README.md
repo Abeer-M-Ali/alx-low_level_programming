@@ -1,84 +1,55 @@
-# C - Structures, Typedef Tasks :
+# C - Structures, typedef
 
- 
- 
+In this project, I learned about using structures and `typedef` in C.
 
+## Tests :heavy_check_mark:
 
-## Mandatory
+* [tests](./tests): Folder of test files. Provided by ALX Africa .
 
+## Header File :file_folder:
 
+* [dog.h](./dog.h): Header file containing definitions and prototypes for all types
+and functions written in the project.
 
+| Type/File       | Defintion/Prototype                                                      |
+| --------------- | ------------------------------------------------------------------------ |
+| `struct dog`    | <ul><li>`char *name`</li><li>`float age`</li><li>`char *owner`</li></ul> |
+| `typedef dog_t` | `struct dog`                                                             |
+| `1-init_dog.c`  | `void init_dog(struct dog *d, char *name, float age, char *owner);`      |
+| `2-print_dog.c` | `void print_dog(struct dog *d);`                                         |
+| `4-new_dog.c`   | `dog_t *new_dog(char *name, float age, char *owner);`                    |
+| `5-free_dog.c`  | `void free_dog(dog_t *d);`                                               |
 
+## Tasks :page_with_curl:
 
-### Poppy
+## 0. Django
+  * [dog.h](./dog.h): Header file that defines a new type `struct dog` with the
+  following elements:
+    * `char *name`
+    * `float age`
+    * `char *owner`
 
-0. Define a new type `struct dog` with the following elements:
-    - `name`, type = `char *`
-    - `age`, type = `float`
-    - `owner`, type = `char *`
-    - use the `0-main.c`
+## 1. A dog is the only thing on earth that loves you more than you love yourself
+  * [1-init_dog.c](./1-init_dog.c): C function that initializes a variable of type `struct dog`.
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a	
-    ```
+## 2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad
+  * [2-print_dog.c](./2-print_dog.c): C function that prints a `struct dog`.
+    * If an element of `d` is `NULL`, the function prints `(nil)` instead of the element.
+    * If `d` is `NULL`, the function prints nothing.
 
+## 3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read
+  * [dog.h](./dog.h): Header file that defines a new type `dog_t` as a new name for the
+  type `struct dog`.
 
-### A dog is the only thing on earth that loves you more than you love yourself
+## 4. A door is what a dog is perpetually on the wrong side of
+  * [4-new_dog.c](./4-new_dog.c): C function that creates a dog.
+    * Returns `NULL` if the function fails.
 
-1. Write a function that initialize a variable of type `struct dog`
-    - Prototype: `void init_dog(struct dog *d, char *name, float age, char *owner);`
-    - use the `1-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-init_dog.c -o b	
-    ```
-
-
-### A dog will teach you unconditional love. If you can have that in your life, things won't be too bad
-
-2. Write a function that prints a `struct dog`
-    - Prototype: `void init_dog(struct dog *d, char *name, float age, char *owner);`
-    - Format: see example bellow
-    - You are allowed to use the standard library
-    - If an element of `d` is `NULL`, print `(nil)` instead of this element. (if `name` is `NULL`, print `Name: (nil)`)
-    - If `d` is `NULL` print nothing.
-    - use the `2-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_dog.c -o c	
-    ```
-
-
-### Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read
-
-3. Define a new type `dog_t` as a new name for the type `struct dog`.
-    - use the `3-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d	
-    ```
+## 5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg
+  * [5-free_dog.c](./5-free_dog.c): C function that frees dogs.
 
 
-### A door is what a dog is perpetually on the wrong side of
+## Author :black_nib:
 
-4. WWrite a function that creates a new dog.
-    - Prototype: `dog_t *new_dog(char *name, float age, char *owner);`
-    - You have to store a copy of `name` and `owner`
-    - Return `NULL` if the function fails
-    - use the `4-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-new_dog.c -o e	
-    ```
-
-
-### How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg
-
-5. Write a function that frees dogs.
-    - Prototype: `void free_dog(dog_t *d);`
-    - use the `5-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-free_dog.c 4-new_dog.c -o f	
-    ```
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
 
