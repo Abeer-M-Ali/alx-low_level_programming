@@ -1,121 +1,83 @@
-# C - Recursion Tasks :
+# C - Recursion
 
- 
+In this project, I learned about recursion in C.
 
-## Mandatory
+## Tests :heavy_check_mark:
 
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
+## Helper File :raised_hands:
 
-### She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget
+* [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
-0. Write a function that prints a string, followed by a new line.
-    - Prototype: `void _puts_recursion(char *s);`
-    - use the `0-main.c`
+## Header File :file_folder:
 
-* FYI: The standard library provides a similar function: `puts`. Run `man puts` to learn more.
+* [main.h](./main.h): Header file containing prototypes for all
+functions written in the project.
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion	
-    ```
+| File                      | Prototype                             |
+| ------------------------- | ------------------------------------- |
+| `0-puts_recursion.c`      | `void _puts_recursion(char *s);`      |
+| `1-print_rev_recursion.c` | `void _print_rev_recursion(char *s);` |
+| `2-strlen_recursion.c`    | `int _strlen_recursion(char *s);`     |
+| `3-factorial.c`           | `int factorial(int n);`               |
+| `4-pow_recursion.c`       | `int _pow_recursion(int x, int y);`   |
+| `5-sqrt_recursion.c`      | `int _sqrt_recursion(int n);`         |
+| `6-is_prime_number.c`     | `int is_prime_number(int n);`         |
+| `7-is_palindrome.c`       | `int is_palindrome(char *s);`         |
+| `100-wildcmp.c`           | `int wildcmp(char *s1, char *s2);`    |
 
-### Why is it so important to dream? Because, in my dreams we are together
+## Tasks :page_with_curl:
 
-1. Write a function that prints a string in reverse.
-    - Prototype: `void _print_rev_recursion(char *s);`
-    - use the `1-main.c `
+## 0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget
+  * [0-puts_recursion.c](./0-puts_recursion.c): C function that prints a string,
+  followed by a new line.
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-print_rev_recursion.c -o 1-print_rev_recursion	
-    ```
+## 1. Why is it so important to dream? Because, in my dreams we are together
+  * [1-print_rev_recursion.c](./1-print_rev_recursion.c): C function that prints
+  a string in reverse.
 
-### Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
+## 2. Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
+  * [2-strlen_recursion.c](./2-strlen_recursion.c): C function that returns the
+  length of a string.
 
-2. Write a function that returns the length of a string.
-    - Prototype: `int _strlen_recursion(char *s);`
-    - use the `2-main.c`
+## 3. You mustn't be afraid to dream a little bigger, darling
+  * [3-factorial.c](./3-factorial.c): C function that returns the factorial of
+  a given number.
 
-* FYI: The standard library provides a similar function: `strlen`. Run `man strlen` to learn more.
+## 4. Once an idea has taken hold of the brain it's almost impossible to eradicate
+  * [4-pow_recursion.c](./4-pow_recursion.c): C function that returns the value of
+  a number `x` raised to the value of an input `y`.
+    * If `y` is less than `0`, the function returns `-1`.
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89  2-main.c 2-strlen_recursion.c -o 2-strlen_recursion	
-    ```
+## 5. Your subconscious is looking for the dreamer
+  * [5-sqrt_recursion.c](./5-sqrt_recursion.c): C function that returns the natural square
+  root of a number.
+    * If the number does not have a natural square root, the function returns `-1`.
 
-### You mustn't be afraid to dream a little bigger, darling
+## 6. Inception. Is it possible?
+  * [6-is_prime_number.c](./6-is_prime_number.c): C function that checks in an
+  integer is a prime number.
+    * If the integer is prime, the function returns `1`.
+    * Otherwise, the function returns `0`.
 
-3. Write a function that returns the factorial of a given number.
-    - Prototype: `int factorial(int n);`
-    - If `n` is lower than `0`, the function should return `-1` to indicate an error
-    - Factorial of `0` is `1`
-    - use the `3-main.c`
+## 7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything
+  * [100-is_palindrome.c](./100-is_palindrome.c): C function that checks if a string is
+  a palindrome.
+    * If the string is a palindrome, the function returns `1`.
+    * Otherwise, the function returns `0`.
 
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-factorial.c -o 3-factorial	
-    ```
+## 8. Inception. Now, before you bother telling me it's impossible...
+  * [101-wildcmp.c](./101-wildcmp.c): C function that compares two strings
+  `s1` and `s2`.
+    * `s2` can contain the special character `*`.
+    * If the strings can be considered identical, the function returns `1`.
+    * Otherwise, the function returns `0`.
+    
+    
+    
+## Authors :black_nib:
 
-### Once an idea has taken hold of the brain it's almost impossible to eradicate
+## Author :black_nib:
 
-4. Write a function that returns the value of `x` raised to the power of `y`.
-    - Prototype: `int _pow_recursion(int x, int y);`
-    - If y is lower than `0`, the function should return `-1`
-    - use the `4-main.c`
-
-* FYI: The standard library provides a different function: `pow`. Run `man pow` to learn more.
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-pow_recursion.c -o 4-pow	
-    ```
-
-### Your subconscious is looking for the dreamer
-
-5. Write a function that returns the natural square root of a number.
-    - Prototype: `int _sqrt_recursion(int n);`
-    - If `n` does not have a natural square root, the function should return `-1`
-    - use the `5-main.c`
-
-* FYI: The standard library provides a different function: `sqrt`. Run `man sqrt` to learn more.
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-sqrt_recursion.c -o 5-sqrt	
-    ```
-
-### Inception. Is it possible?
-
-6. Write a function that returns `1` if the input integer is a prime number, otherwise return `0`.
-    - Prototype: `int is_prime_number(int n);`
-    - use the `6-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-is_prime_number.c -o 6-prime	
-    ```
-
-
-
-
-## Advanced
-
-
-
-
-
-### They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything
-
-7. Write a function that returns `1` if a string is a palindrome and `0` if not.
-    - Prototype: `int is_palindrome(char *s);`
-    - An empty string is a palindrome
-    - use the `100-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-is_palindrome.c -o 100-palindrome	
-    ```
-
-### Inception. Now, before you bother telling me it's impossible...
-
-8. Write a function that compares two strings and returns `1` if the strings can be considered identical, otherwise return `0`.
-    - Prototype: `int wildcmp(char *s1, char *s2);`
-    - `s2` can contain the special character `*`.
-    - The special char `*` can replace any string (including an empty string)
-    - use the `101-main.c`
-
-    ```{bash}
-    gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-wildcmp.c -o 101-wildcmp	
-    ```
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) |
