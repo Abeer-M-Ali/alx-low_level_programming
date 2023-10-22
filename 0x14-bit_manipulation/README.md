@@ -1,112 +1,77 @@
-# C - Bit manipulation Tasks :
+# C - Bit manipulation
 
- 
- 
- 
+In this project, I learned how to manipulate bits and use the
+bitwise operators `>>`, `<<`, `&`, `|`, and `^` in C.
 
-## Mandatory
+## Tests :heavy_check_mark:
 
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
+## Helper File :raised_hands:
 
+* [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
 
+## Header File :file_folder:
 
+* [main.h](./main.h): Header file containing prototypes for all
+functions written in the project.
 
-### 0
+| File                   | Prototype                                                           |
+| ---------------------- | ------------------------------------------------------------------- |
+| `0-binary_to_uint.c`   | `unsigned int binary_to_uint(const char *b);`                       |
+| `1-print_binary.c`     | `void print_binary(unsigned long int n);`                           |
+| `2-get_bit.c`          | `int get_bit(unsigned long int n, unsigned int index);`             |
+| `3-set_bit.c`          | `int set_bit(unsigned long int *n, unsigned int index);`            |
+| `4-clear_bit.c`        | `int clear_bit(unsigned long int *n, unsigned int index);`          |
+| `5-flip_bits.c`        | `unsigned int flip_bits(unsigned long int n, unsigned long int m);` |
+| `100-get_endianness.c` | `int get_endianness(void);`                                         |
 
-0. Write a function that converts a binary number to an `unsigned int`.
-    - Prototype: `unsigned int binary_to_uint(const char *b);`
-    - where `b` is pointing to a string of `0` and `1` chars
-    - Return: the converted number, or 0 if
-        * there is one or more chars in the string `b` that is not `0` or `1`
-        * `b` is `NULL`
-    - use the `0-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-binary_to_uint.c -o a
-	```
+## Tasks :page_with_curl:
 
+## 0. 0
+  * [0-binary_to_uint.c](./0-binary_to_uint.c): C function that converts a binary number
+  to an `unsigned int`.
+  * The parameter `b` is a pointer to a string of `0` and `1` characters.
+  * If `b` is `NULL` or there are one or more characters in `b` that are
+  not `0` or `1` - returns `0`.
+  * Otherwise - returns the converted number.
 
-### 1
+## 1. 1
+  * [1-print_binary.c](./1-print_binary.c): C function that prints the binary representation
+  of a number.
 
-1. Write a function that prints the binary representation of a number.
-    - Prototype: `void print_binary(unsigned long int n);`
-    - Format: see example
-    - You are not allowed to use arrays
-    - You are not allowed to use `malloc`
-    - You are not allowed to use the `%` or `/` operators
-    - use the `1-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-print_binary.c _putchar.c -o b
-	```
+## 2. 10
+  * [2-get_bit.c](./2-get_bit.c): C function that returns the value of a bit at a
+  given index.
+  * Indices start at `0`.
+  * If an error occurs - returns `-1`.
+  * Otherwise - returns the value of the bit at the given index.
 
+## 3. 11
+  * [3-set_bit.c](./3-set_bit.c): C function that sets the value of a bit at a given index
+  to `1`.
+  * If an error occurs - returns `-1`.
+  * Otherwise - returns `1`.
 
-### 10
+## 4. 100
+  * [4-clear_bit.c](./4-clear_bit.c): C function that sets the value of a bit at
+  a given index to `0`.
+  * If an error occurs - returns `-1`.
+  * Otherwise - returns `1`.
 
-2. Write a function that returns the value of a bit at a given index.
-    - Prototype: `int get_bit(unsigned long int n, unsigned int index);`
-    - where `index` is the index, starting from `0` of the bit you want to get
-    - Returns: the value of the bit at index `index` or `-1` if an error occured
-    - use the `2-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-get_bit.c -o c 
-	```
+## 5. 101
+  * [5-flip_bits.c](./5-flip_bits.c): C function that returns the number of bits needed
+  to be flipped to get from one number to another.
 
+## 6. Endianness
+  * [100-get_endianness.c](./100-get_endianness.c): C function that checks the endianness.
+  * If big-endian - returns `0`.
+  * If little-endian - returns `1`.
 
-### 11
+## 7. Crackme3
+  * [101-password](./101-password): File containing the password for the
+  [crackme3](https://github.com/alx-tools/0x13.c) executable.
 
-3. Write a function that sets the value of a bit to `1` at a given index.
-    - Prototype: `int set_bit(unsigned long int *n, unsigned int index);`
-    - where `index` is the index, starting from `0` of the bit you want to set
-    - Returns: `1` if it worked, or `-1` if an error occurred
-    - use the `3-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-set_bit.c -o d
-	```
-### 100
+## Author :black_nib:
 
-4. Write a function that sets the value of a bit to `0` at a given index.
-    - Prototype: `int clear_bit(unsigned long int *n, unsigned int index);`
-    - where `index` is the index, starting from `0` of the bit you want to set
-    - Returns: `1` if it worked, or `-1` if an error occurred
-    - use the `4-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-clear_bit.c -o e
-	```
-
-### 101
-
-5. Write a function that returns the number of bits you would need to flip to get from one number to another.
-    - Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
-    - You are not allowed to use the `%` or `/` operators
-    - use the `5-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-flip_bits.c -o f
-	```
-
-
-
-
-
-## Advanced
-
-
-
-
-
-###  Endianness
-6. Write a function that checks the endianness.
-    - Prototype: `int get_endianness(void);`
-    - Returns: 0 if big endian, 1 if little endian
-    - use the `100-main.c`
-      
-	```{bash}
-	$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-get_endianness.c -o h
-	```
-    ```{bash}
-	$ lscpu | head
-	```
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
