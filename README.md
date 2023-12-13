@@ -29,20 +29,20 @@ working in the C language. The specific list of projects contained follows:
 * [0x0D. C - Preprocessor](./0x0D-preprocessor)
 * [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
 * [0x0F. C - Function pointers](./0x0F-function_pointers)
-* [0x10. C - Variadic functions](./0x0F-variadic_functions)
-* [0x11. C - printf](https://github.com/Esteban1891/printf/tree/master)
-* [0x12. C - Singly linked lists](./0x11-singly_linked_lists)
-* [0x13. C - More singly linked lists](./0x12-more_singly_linked_lists)
-* [0x14. C - Bit manipulation](./0x13-bit_manipulation)
-* [0x15. C - File I/O](./0x14-file_io)
-* [0x16. C - Simple Shell](https://github.com/Esteban1891/simple_shell/tree/master)
-* [0x17. C - Doubly linked lists](./0x16-doubly_linked_lists)
-* [0x18. C - Dynamic libraries](./0x17-dynamic_libraries)
-* [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/Esteban1891/monty/tree/master)
+* [0x10. C - Variadic functions](./0x10-variadic_functions)
+* [0x11. C - printf](https://github.com/Abeer-M-Ali/printf)
+* [0x12. C - Singly linked lists](./0x12-singly_linked_lists)
+* [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists)
+* [0x14. C - Bit manipulation](./0x14-bit_manipulation)
+* [0x15. C - File I/O](./0x15-file_io)
+* [0x16. C - Simple Shell](https://github.com/Abeer-M-Ali/simple_shell)
+* [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists)
+* [0x18. C - Dynamic libraries](./0x18-dynamic_libraries)
+* [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/Abeer-M-Ali/monty)
 * [0x1A. C - Hash tables](./0x1A-hash_tables)
-* [0x1B. C - Sorting algorithms & Big O](https://github.com/Esteban1891/sorting_algorithms)
+* [0x1B. C - Sorting algorithms & Big O](https://github.com/Abeer-M-Ali/Sorting-algorithms)
 * [0x1C. C - Makefiles](./0x1C-makefiles)
-* [0x1D. C - Binary trees](https://github.com/Esteban1891/binary_trees)
+* [0x1D. C - Binary trees](https://github.com/Abeer-M-Ali/Binary-trees)
 * [0x1E. C - Search Algorithms](./0x1E-search_algorithms)
 
 ## Acknowledgements :pray:
@@ -55,5 +55,4 @@ using project-based peer learning. For more information, visit
 
 ## Author :black_nib:
 
-- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) | [Twitter](https://twitter.com/abeerragab5211) | 
-
+- [Abeer Ragab](https://github.com/Abeer-M-Ali) | [Linkedin](https://www.linkedin.com/in/abeer-ragab-b25872260/) |
